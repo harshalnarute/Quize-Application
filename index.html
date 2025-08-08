@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Interactive Frontend Developer Quiz - Test your knowledge of HTML, CSS, JavaScript and modern web development"/>
+  <meta name="keywords" content="frontend, quiz, HTML, CSS, JavaScript, web development, responsive design"/>
+  <meta name="author" content="CODTECH"/>
+  <title>Frontend Developer Quiz - Interactive & Responsive</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="quiz-container" role="main" aria-label="Frontend Developer Quiz">
+    <header>
+      <h1>Frontend Developer Quiz</h1>
+      <div id="progress" aria-live="polite" aria-atomic="true">Question 1 of 10</div>
+    </header>
+    
+    <section aria-labelledby="question-heading">
+      <h2 id="question-heading" class="sr-only">Current Question</h2>
+      <div id="question-container" class="card" role="region" aria-live="polite"></div>
+      
+      <div id="answer-buttons" class="btn-group" role="radiogroup" aria-labelledby="question-heading">
+       
+      </div>
+      
+      <button 
+        id="next-btn" 
+        class="btn hidden" 
+        aria-label="Next question"
+        aria-hidden="true">
+        Next Question
+      </button>
+    </section>
+  </main>
+
+
+  <div class="sr-only" aria-live="assertive" aria-atomic="true">
+    <span id="sr-announcements"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
